@@ -10,13 +10,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Barlow:ital,wght@0,100;0,400;0,600;0,900;1,100&display=swap" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.js"></script>
+
 
 </head>
 <body>
 
+<script>
+
+var $header = $('#header');
+
+$(window).scroll(function () {
+
+   if(scrollY <= 0){
+       $header.animate({
+            opacity: 1
+       }, 1000);
+   }
+   if(scrollY > 0 && $header.is(':not(:animated)')){
+       $header.animate({
+            opacity: .5
+       }, 1000);
+    }
+ });
+
+</script>
+
 <div id="header">
     <div class="logo1">
-        list
+        
     </div>
     <ul>
         <li>Prazer, sou @ViniBoza</li>
@@ -25,6 +47,21 @@
         <li>Contato</li>
     </ul>
 </div>
+
+<div class="containerHeader">
+
+</div>
+
+<div class="socialMedia">
+</div>
+
+<div class="knowMe">
+    
+</div>
     
 </body>
+
+<style>
+
+</style>
 </html>
