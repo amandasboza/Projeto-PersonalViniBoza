@@ -16,6 +16,11 @@
     position: fixed;
 }
 
+.logo1 img {
+    width: 120px;
+    text-align: center;
+    margin-left: 50px;
+}
 
 #header ul {
     list-style-type: none;
@@ -49,4 +54,15 @@
     height: 580px;
     background-color: white
 }
-    
+
+.boxInformation {
+    float: left;
+    width: 900px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.123);
+    margin-top: 190px;
+    text-align: left;
+    padding: 30px;
+    font-family: 'Barlow 400', sans-serif;
+    margin-left: 180px;
+}

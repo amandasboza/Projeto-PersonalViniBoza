@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Barlow:ital,wght@0,100;0,400;0,600;0,900;1,100&display=swap" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet">
-    <script type="text/javascript" src="jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -18,27 +18,20 @@
 
 <script>
 
-var $header = $('#header');
+$(window).scroll(function() {
+    if($(this).scrollTop() == 0)
+        $('#header').css('opacity','1');
+    else
+        $('#header').css('opacity','.4');
+});
 
-$(window).scroll(function () {
 
-   if(scrollY <= 0){
-       $header.animate({
-            opacity: 1
-       }, 1000);
-   }
-   if(scrollY > 0 && $header.is(':not(:animated)')){
-       $header.animate({
-            opacity: .5
-       }, 1000);
-    }
- });
 
 </script>
 
 <div id="header">
     <div class="logo1">
-        
+    <img src="img/img1.png">
     </div>
     <ul>
         <li>Prazer, sou @ViniBoza</li>
@@ -49,7 +42,14 @@ $(window).scroll(function () {
 </div>
 
 <div class="containerHeader">
+    <div class="boxInformation">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <div>
 
+    </div>
 </div>
 
 <div class="socialMedia">
