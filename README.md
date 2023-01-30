@@ -8,6 +8,7 @@
 
 - [x] Linguagem de marcação no geral;
 - [x] Javascript;
+- [x] Responsivo e mobile;
 - [x] CSS, style e suas utilizações;
 
 ## 💻 Linguagens usadas até então:
